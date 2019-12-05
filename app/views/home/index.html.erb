@@ -1,29 +1,7 @@
-<%= render 'home/nav' %>
+<%= render 'home/partials/nav' %>
   
-<%= render 'home/header' %>
+<%= render 'home/partials/header' %>
 
-<section class="developers text-center" id="js-developers">
-    <h2 class=title>No appointment needed. Just chat!</h2>
-    <div class="container">
-        <div class="row my-5">
-            
-            <% 20.times do |t|  %>
-                
-                <div class="col-md-3 col-xs-6">
-                    <%= render 'home/user-card' %>
-                </div>
-                
-            <% end %>
-            
-        </div>
-        
-        
-        
-            
-            
-            
-            
-        
-    </div>
-</section>
+<%= render developers %>
+
 
