@@ -5,7 +5,12 @@
         <img src="assets/avatar5.jpeg" alt=""> 
     <% end %>
     
-    <h6 class="dev-name text-white"><%= user.name %></h6>
+    <h6 class="dev-name text-white">
+        <%= user.name %>
+        <span class="appearance <%= user.state %>" id="js-appearance<%= user.id %>">
+            <i class="fas fa-circle"></i>
+        </span>
+    </h6>
     <h6 class="dev-level"><%= user.level %></h6>
     <div class="dev-icons">
         
@@ -13,7 +18,7 @@
           <i class="fab fa-github-square"></i>
         <% end %>
       
-        <%= link_to '', class:"camera-icon m-2 #{user.state}", id:"camera-icon#{user.id}", title: "Start a video call with #{user.name}", data: {id: user.id, name: user.name, toggle: "tooltip", placement: "top"}, remote: true  do %>
+        <%= link_to '', class:"camera-icon m-2 #{user.state}", id:"js-camera-icon#{user.id}", title: "Start a video call with #{user.name}", data: {id: user.id, name: user.name, toggle: "tooltip", placement: "top"}, remote: true  do %>
           <i class="fas fa-video"></i>
         <% end %>
         

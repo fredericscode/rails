@@ -121,6 +121,16 @@ body {
       width: 60px;
       height: 60px;
     }
+    .dev-name {
+        padding: 0px 10px;
+        .appearance {
+            color: red;
+            font-size: 8px;
+            &.online {
+                color: green;
+            }
+        }
+    }
     .dev-level {
       font-weight: 300;
       color: #2D8F98;
@@ -134,6 +144,11 @@ body {
       }
       .camera-icon {
         color: $greenColor;
+        &.offline {
+            display: none;
+        }
+        
+        
       }
     }
   }
