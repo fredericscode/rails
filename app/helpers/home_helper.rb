@@ -22,4 +22,20 @@ module HomeHelper
             "home/partials/startbtn/authbtn"
         end
     end
+    
+    def change_state_btn
+        current_user.online? ? "home/partials/nav/dropdown/gofflinebtn" : "home/partials/nav/dropdown/gonlinebtn"
+    end
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 end

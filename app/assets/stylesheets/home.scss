@@ -37,7 +37,7 @@ body {
     border-color: $greenColor;
     color: $greenColor !important;
   }
-  &.state-btn:hover {
+  &.state-btn:hover, &.state-btn.online {
     background-color: $greenColor;
     border-color: $greenColor;
     color: white !important;
