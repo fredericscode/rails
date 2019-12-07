@@ -16,6 +16,9 @@ gem 'devise'
 
 gem "aws-sdk-s3", require: false
 
+# Use opentok for peer-to-peer video calls
+gem "opentok", "~> 3.1.0"
+
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 4.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks

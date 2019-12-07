@@ -1,3 +1,8 @@
+import roomSubscriber from '../channels/roomSubscriber'
+
+
+
+
 document.addEventListener('DOMContentLoaded', (event) => {
     
   /* Initialize tooltips */ 
@@ -47,7 +52,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         recipient_name_modal.innerHTML = recipient_name;
         $('#sender-notif-modal').modal('show');
 
-        //cable.call(recipient_id, recipient_name);
+        roomSubscriber.call(recipient_id, recipient_name);
       })
     }
 
