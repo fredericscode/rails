@@ -1,4 +1,4 @@
-import roomSubscriber from '../channels/roomSubscriber'
+import roomSubscriber from '../channels/room_channel'
 
 
 
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       console.log(session_id);
       console.log("answer btn clicked");
       $('#receiver-notif-modal').modal('hide');
-      //cable.answer(session_id, sender_id);
+      roomSubscriber.answer(session_id, sender_id);
     });
 
   
