@@ -57,7 +57,7 @@ class RoomChannel < ApplicationCable::Channel
   def broadcast_notif_to_recipient(recipient_id, session_id)
     ActionCable.server.broadcast(
       "room_#{recipient_id}",
-      sender_first_name: current_user.full_name,
+      sender_first_name: current_user.name,
       sender_id: current_user.id,
       session_id: session_id,
       step: 'receiving the call'
