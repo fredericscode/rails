@@ -1,9 +1,8 @@
 class SessionsController < Devise::SessionsController
     
     def destroy
-        user_id = current_user.id
+        HomeController.offline(current_user.id) if current_user.online?
         super
-        HomeController.offline(user_id) if user.online?
     end
     
 end
