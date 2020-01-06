@@ -11,8 +11,15 @@ class HomeController < ApplicationController
       end
   end
   
-  def offline
-      current_user.offline!
+  def offline(user_id=1)
+      
+      if user_signed_in?
+        current_user.offline!
+      else
+        user = User.find(user_id)
+        user.offline!
+      end
+      
       broadcast_change_to_users("offline")
       respond_to do |format|
           format.js
