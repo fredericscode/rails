@@ -195,7 +195,7 @@ body {
     	position: relative;
     	height: 100px;
     	width: 100px;
-    	margin: 50px auto;
+    	margin: 20px auto;
     	border-radius: 50%;
     	overflow: hidden;
     	box-shadow: 1px 1px 15px -5px black;
@@ -213,7 +213,7 @@ body {
         	transition: all .3s ease;
         	  &:after{
         		  //font-family: FontAwesome;
-        		  content: "Upload Avatar";
+        		  content: "Upload Picture";
         		  top: 0px; left: 0;
         		  width: 100%;
         		  height: 100%;
