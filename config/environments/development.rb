@@ -53,7 +53,7 @@ Rails.application.configure do
   # Suppress logger output for asset requests.
   config.assets.quiet = true
   
-  config.hosts << "localhost-fredericscode-1.paiza-user.cloud"
+  config.hosts << "localhost-fredericscode-1.paiza-user-free.cloud"
   
   config.action_mailer.default_url_options = { host: 'localhost-fredericscode-1.paiza-user.cloud' }
 

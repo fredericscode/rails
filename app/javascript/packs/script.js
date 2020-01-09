@@ -34,10 +34,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
   /* Scroll to the developers section when the start button is clicked */
   const startBtn = document.getElementById('js-start-btn')
   const devSection = document.getElementById('js-developers')
-  startBtn.addEventListener('click', (event) => {
-    event.preventDefault()
-    devSection.scrollIntoView({behavior: 'smooth', block: 'start'})
-  })
+  if (startBtn !== null) {
+    startBtn.addEventListener('click', (event) => {
+      event.preventDefault()
+      devSection.scrollIntoView({behavior: 'smooth', block: 'start'})
+    })
+  }
+  
   
   /* Change the background color and innerHTML when the online button is hovered */
   const onlineBtn = document.getElementById('js-onlinebtn')

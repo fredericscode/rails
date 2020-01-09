@@ -13,7 +13,6 @@
                   <div class="upload-button">
                 	<i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
                   </div>
-	              <!--<input class="file-upload" type="file"/>-->
 	              <%= f.file_field :avatar, class: "file-upload form-control" %>
               </div>
             
@@ -30,10 +29,6 @@
                   <%= f.label :github_link %><br />
                   <%= f.text_field :github_link, class: "form-control" %>
                 </div>
-                <!--<div class="form-group col-md-6">
-                  <%= f.label :avatar %><br />
-                  <%= f.file_field :avatar, class: "form-control" %>
-                </div>-->
                 <div class="form-group col-md-6">
                   <%= f.label :password %>
                   <%= f.password_field :password, class: "form-control", autocomplete: "new-password" %>
